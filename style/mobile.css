@@ -1,0 +1,38 @@
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .tabs.active {
+    display: flex;
+  }
+
+  #offertebtn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ============ Page: Contact ============ */ 
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

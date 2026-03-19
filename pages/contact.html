@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - BDR Energie</title>
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+
+  <body>
+    <section class="contact">
+      <div class="contact-container">
+        <!-- LINKS -->
+        <div class="contact-info">
+          <h2>Contacteer ons</h2>
+          <p>Wij helpen u graag verder met uw project.</p>
+
+          <div class="info-block">
+            <p>📧 info@bedrijf.be</p>
+            <p>📞 +32 000 00 00 00</p>
+            <p>📍 België</p>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="map">
+            <iframe
+              src="https://maps.google.com/maps?q=belgie&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RECHTS -->
+        <form class="contact-form">
+          <input type="text" placeholder="Naam" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Telefoon" />
+
+          <!-- Dropdown -->
+          <select required>
+            <option value="">Kies een dienst</option>
+            <option>Zonnepanelen</option>
+            <option>Thuisbatterijen</option>
+            <option>Laadpalen</option>
+            <option>Sanitair</option>
+            <option>Dakwerken</option>
+          </select>
+
+          <textarea placeholder="Uw bericht"></textarea>
+
+          <button type="submit">Verstuur bericht</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
