@@ -88,51 +88,139 @@
     </section>
 
     <section class="diensten">
-      <div class="diensten-container">
-        <div>
-          <h3>Diensten</h3>
-          <p>
-            Wij werken met duurzame materialen en zorgen voor een correcte
-            installatie, opvolging en onderhoud. Zo bent u zeker van een systeem
-            dat jarenlang blijft presteren.
-          </p>
+      <span class="diensten-btn-area">
+        <button>Diensten</button>
+      </span>
+      <div class="diensten-grid">
+      <span class="diensten-img-area">
+            <img src="./assets/winter.jpeg" id="winter-pic" />
+      </span>
+        <span>
+          <div class="dienst">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4V2M12 22v-2M4 12H2m20 0h-2M5 5l-1-1m16 16l-1-1M5 19l-1 1m16-16l-1 1M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+              </svg>
+            </div>
+            <h3>Zonnepanelen</h3>
+            <p>Maximaal rendement met duurzame energie op maat.</p>
+          </div>
+
+          <div class="dienst">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 7h12v10H6zM9 21h6"/>
+              </svg>
+            </div>
+            <h3>Thuisbatterijen</h3>
+            <p>Bewaar energie voor later gebruik.</p>
+          </div>
+
+          <div class="dienst">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 2v11h3l-1 9 6-12h-4l1-8z"/>
+              </svg>
+            </div>
+            <h3>Laadpalen</h3>
+            <p>Efficiënt laden voor uw elektrische wagen.</p>
+          </div>
+          </span>
         </div>
-        <div class="diensten-blokken">
-          <ul>
-            <li>Zonnepanelen</li>
-            <li>Thuisbatterijen</li>
-          </ul>
-          <ul>
-            <li>Dakwerken</li>
-            <li>Sanitair</li>
-          </ul>
+      <div class="diensten-grid">
+       <span>
+        <div class="dienst">
+          <div class="icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 10l9-7 9 7v10H3z"/>
+            </svg>
+          </div>
+          <h3>Dakwerken</h3>
+          <p>Een sterke basis voor uw woning.</p>
         </div>
+
+        <div class="dienst">
+          <div class="icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 7h10M7 12h10M7 17h6"/>
+            </svg>
+          </div>
+          <h3>Sanitair</h3>
+          <p>Comfort en kwaliteit voor uw woning.</p>
+        </div>
+       </span> 
+       <span class="diensten-img-area">
+       <img src="./assets/banner.png" id="winter-pic" />
+       </span>
       </div>
     </section>
 
+    <section class="recensies">
+      <div class="recensies-container">
+        <div class="recensies-header">
+          <h2>Wat klanten zeggen</h2>
+        </div>
+        <div class="recensies-wrapper">
+          <button class="arrow left" onclick="scrollReviews(-1)">‹</button>
+          <div class="recensies-track" id="reviewsTrack">
+            <div class="review">
+              <p>"Goede service. Kleine probleempje werd vakkundig opgelost, zonder enig gemor. Zelfs een noodzakelijke verbetering ( wat buiten hun 'scope' was!! ) , werd - aan redelijke prijs- meteen aangepast in de verdeelkast. Bedankt!"</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"Nadat de vorige firma mij in de steek had gelaten heeft BDR ENERGIE mij heel goed geholpen en uit de nood geholpen aan een zeer redelijke prijs.
+nogmaals BEDANKT"</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"Vandaag thuisbattery laten plaatsen van BDR ENERGIE. Een persoon met kennis vakkundig geplaatst en voldoende uitleg. Een aanrader."</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"Fantastische service van Elias en zijn team, niets was te veel gevraagd en alles is perfect geïnstalleerd."</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"Alweer een top installatie bij ons geïnstalleerd!! Dit keer een batterij. Geen verlof moeten nemen, alles is verlopen zoals afgesproken."</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"Ik ben heel tevreden over de gepresenteerde werken."</p>
+              <h4>- Klant </h4>
+            </div>
+            <div class="review">
+              <p>"De beste in het vak! Wij kregen een zeer uitgebreide en duidelijke uitleg, ze weten duidelijk over wat ze het hebben en staan ook steeds klaar om je vragen te beantwoorden. Ik kan ze zeker aanraden!"</p>
+              <h4>- Klant </h4>
+            </div>
+          </div>
+          <button class="arrow right" onclick="scrollReviews(1)">›</button>
+        </div>
+      </div>
+    </section>
+    
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
           <h3>BDR Energie</h3>
-          <p>Duurzame energie oplossingen voor particulieren en bedrijven.</p>
+          <p>Uw Energie is Ons Vak </br><i>voor particulieren en bedrijven</i></p>
         </div>
 
         <div class="footer-col">
           <h4>Diensten</h4>
           <ul>
+            <li>Sanitair</li>
+            <li>Dakwerken</li>
             <li>Zonnepanelen</li>
-            <li>Thuisbatterijen</li>
             <li>Laadpalen</li>
-            <li>Sanitair & Dakwerken</li>
+            <li>Thuisbatterijen</li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li>Email: info@bedrijf.be</li>
-            <li>Tel: +32 000 00 00 00</li>
-            <li>België</li>
+            <li>Email: info@bdrenergie.be</li>
+            <li>Tel: +32 493 29 91 75</li>
           </ul>
         </div>
       </div>

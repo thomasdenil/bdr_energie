@@ -1,16 +1,21 @@
 /* styles.css */
+@font-face {
+  font-family: Garet;
+  src: url(../assets/font/Garet/Garet-Book.woff); 
+}
+
 :root {
   --green: #48b747;
   --black: #242424;
   --blue: #656dc2;
-  --white: #fcf4e9; 
+  --white: #fffbf5; 
   --dark: #323232; 
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: Garet,'Inter', sans-serif;
 }
 
 body {
@@ -32,9 +37,8 @@ body {
 }
 
 .menu {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px 20px;
+  margin: 0;
+  padding: 0px 20px;
 
   display: flex;
   align-items: center;
@@ -109,12 +113,12 @@ body {
   justify-content: center;
 
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .hero-video {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   overflow: hidden;
 }
 
@@ -153,6 +157,7 @@ body {
   margin-bottom: 50px;
 
   color: var(--dark);
+  font-size: xx-large;
 }
 
 #word{
@@ -171,13 +176,14 @@ body {
 .over-ons-container div{
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 
 .over-ons-container div p {
   margin-right: 250px;
   display: block;
   color: var(--dark);
+  margin-top: 50px;
 }
 
 .over-ons button {
@@ -200,24 +206,29 @@ body {
   background-color: var(--dark);
   color: var(--white);
 
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 60px;
 
-  padding: 40px 100px;
+  padding: 70px 100px;
 }
 
 .waarde{
   display: flex;
   flex-direction: column;
+  background-color: var(--white);
+  color: var(--dark);
 
-  border: 1px solid var(--white);
+  border: 1px solid #eee4db;
+  width: 300px;
 }
 
 .waarde h3{
-  padding: 10px 25px 40px 20px;
-  border-bottom: 1px solid var(--white);
+  padding: 25px 35px 55px 20px;
+  border-bottom: 1px solid #eee4db;
+  height: 50px;
 }
 
 .waarde p {
@@ -227,53 +238,154 @@ body {
 /* ============ Sectie: Diensten ============ */ 
 
 .diensten {
-  padding: 80px 20px;
-  height: 200px;
-  margin: 0;
-  margin-bottom: 150px;
-}
-
-.diensten-container {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin: 0;
-}
-
-.diensten-blokken{
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin: 0;
-
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 50px;
-}
-
-.diensten-blokken ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  margin: 40px 100px;
+  gap: 50px;
 }
 
-.diensten-blokken li {
-  padding: 30px 40px;
-  border: 1px solid var(--white);
-  border-radius: 2px;
-
-  text-align: center;
-  font-weight: 500;
-
-  transition: all 0.3s ease;
+.diensten-btn-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.diensten li:hover {
+.diensten button {
+  padding: 8px 26px;
+  border-radius: 3px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  text-transform: uppercase;
+  width: 170px;
+}
+
+.diensten-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--black);
+  fill: none;
+  stroke-width: 1.5;
+  transition: 0.3s ease;
+}
+
+.dienst:hover .icon svg {
+  stroke: var(--green);
+}
+
+.dienst {
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  border-radius: 10px;
+  background: var(--white);
+  transition: 0.3s ease;
+
+  margin-bottom: 20px;
+}
+
+.dienst:hover {
+  transform: translateY(-4px);
   border-color: var(--green);
-  transform: translateY(-5px);
+  z-index: -100;
 }
 
+.diensten-img-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#winter-pic {
+  height: 300px;
+  border-radius: 3px;
+}
+
+/* ============ Sectie: Recensies ============ */ 
+
+.recensies {
+  margin-top: 50px;
+  padding: 60px 20px;
+  background: var(--blue);
+}
+
+.recensies-container {
+  margin: 0 auto;
+}
+
+.recensies-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.recensies-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.recensies-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin: 0px 50px;
+}
+
+.review {
+  width: 300px;
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  border-radius: 5px;
+  background: white;
+  flex-shrink: 0;
+}
+
+.review p {
+  font-size: 14px;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+.review h4 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.arrow {
+  margin: 0px 50px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 2;
+  color: var(--dark);
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+.arrow:hover {
+  border-color: var(--green);
+}
 
 /* ============ Page: Contact ============ */ 
 
@@ -369,6 +481,7 @@ body {
 }
 
 .footer-bottom {
+  min-height: 60px;
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
