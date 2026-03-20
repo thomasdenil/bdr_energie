@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BDR Energie</title>
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/animaties.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -13,13 +14,14 @@
   <body>
     <header class="header">
       <div class="menu">
-        <img src="./assets/logo-bdr.png" id="logo" />
+        <a href="./index.html"><img src="./assets/logo-bdr.png" id="logo" /></a>
 
         <ul class="tabs" id="nav">
-          <li><a href="./pages/contact.html">Diensten</a></li>
-          <li><a href="./pages/contact.html">Projecten</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-          <li><a href="./pages/contact.html">Over Ons</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./diensten.html">Diensten</a></li>
+          <li><a href="./projecten.html">Projecten</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./overons.html">Over Ons</a></li>
         </ul>
 
         <button id="offertebtn">Offerte Aanvragen</button>
@@ -53,7 +55,7 @@
             zonnepanelen tot laadpalen: wij begeleiden u van advies tot
             oplevering.
           </p>
-          <button>Over Ons</button>
+          <a href="./overons.html"><button>Over Ons</button></a>
         </div>
       </div>
     </section>
@@ -89,69 +91,81 @@
 
     <section class="diensten">
       <span class="diensten-btn-area">
-        <button>Diensten</button>
+        <a href="./diensten.html"><button>Diensten</button></a>
       </span>
       <div class="diensten-grid">
-      <span class="diensten-img-area">
-            <img src="./assets/winter.jpeg" id="winter-pic" />
-      </span>
+        <span class="diensten-img-area">
+          <img src="./assets/banner.png" id="banner-pic" />
+        </span>
         <span>
           <div class="dienst">
             <div class="icon">
               <svg viewBox="0 0 24 24">
-                <path d="M12 4V2M12 22v-2M4 12H2m20 0h-2M5 5l-1-1m16 16l-1-1M5 19l-1 1m16-16l-1 1M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+                <path
+                  d="M12 4V2M12 22v-2M4 12H2m20 0h-2M5 5l-1-1m16 16l-1-1M5 19l-1 1m16-16l-1 1M12 8a4 4 0 100 8 4 4 0 000-8z"
+                />
               </svg>
             </div>
-            <h3>Zonnepanelen</h3>
-            <p>Maximaal rendement met duurzame energie op maat.</p>
+            <span>
+              <h3>Zonnepanelen</h3>
+              <p>Maximaal rendement met duurzame energie op maat.</p>
+            </span>
           </div>
 
           <div class="dienst">
             <div class="icon">
               <svg viewBox="0 0 24 24">
-                <path d="M6 7h12v10H6zM9 21h6"/>
+                <path d="M6 7h12v10H6zM9 21h6" />
               </svg>
             </div>
-            <h3>Thuisbatterijen</h3>
-            <p>Bewaar energie voor later gebruik.</p>
+            <span>
+              <h3>Thuisbatterijen</h3>
+              <p>Bewaar energie voor later gebruik.</p>
+            </span>
           </div>
 
           <div class="dienst">
             <div class="icon">
               <svg viewBox="0 0 24 24">
-                <path d="M7 2v11h3l-1 9 6-12h-4l1-8z"/>
+                <path d="M7 2v11h3l-1 9 6-12h-4l1-8z" />
               </svg>
             </div>
-            <h3>Laadpalen</h3>
-            <p>Efficiënt laden voor uw elektrische wagen.</p>
+            <span>
+              <h3>Laadpalen</h3>
+              <p>Efficiënt laden voor uw elektrische wagen.</p>
+            </span>
           </div>
-          </span>
-        </div>
+        </span>
+      </div>
       <div class="diensten-grid">
-       <span>
-        <div class="dienst">
-          <div class="icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M3 10l9-7 9 7v10H3z"/>
-            </svg>
+        <span>
+          <div class="dienst">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 10l9-7 9 7v10H3z" />
+              </svg>
+            </div>
+            <span>
+              <h3>Dakwerken</h3>
+              <p>Een sterke basis voor uw woning.</p>
+            </span>
           </div>
-          <h3>Dakwerken</h3>
-          <p>Een sterke basis voor uw woning.</p>
-        </div>
 
-        <div class="dienst">
-          <div class="icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M7 7h10M7 12h10M7 17h6"/>
-            </svg>
+          <div class="dienst">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 7h10M7 12h10M7 17h6" />
+              </svg>
+            </div>
+            <span>
+              <h3>Sanitair</h3>
+              <p>Comfort en kwaliteit voor uw woning.</p>
+            </span>
           </div>
-          <h3>Sanitair</h3>
-          <p>Comfort en kwaliteit voor uw woning.</p>
-        </div>
-       </span> 
-       <span class="diensten-img-area">
-       <img src="./assets/banner.png" id="winter-pic" />
-       </span>
+        </span>
+        <span class="diensten-img-area">
+          <img src="./assets/winter.jpeg" id="winter-pic" />
+        </span>
       </div>
     </section>
 
@@ -164,64 +178,137 @@
           <button class="arrow left" onclick="scrollReviews(-1)">‹</button>
           <div class="recensies-track" id="reviewsTrack">
             <div class="review">
-              <p>"Goede service. Kleine probleempje werd vakkundig opgelost, zonder enig gemor. Zelfs een noodzakelijke verbetering ( wat buiten hun 'scope' was!! ) , werd - aan redelijke prijs- meteen aangepast in de verdeelkast. Bedankt!"</p>
-              <h4>- Klant </h4>
+              <p>
+                "Goede service. Kleine probleempje werd vakkundig opgelost,
+                zonder enig gemor. Zelfs een noodzakelijke verbetering ( wat
+                buiten hun 'scope' was!! ) , werd - aan redelijke prijs- meteen
+                aangepast in de verdeelkast. Bedankt!"
+              </p>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
-              <p>"Nadat de vorige firma mij in de steek had gelaten heeft BDR ENERGIE mij heel goed geholpen en uit de nood geholpen aan een zeer redelijke prijs.
-nogmaals BEDANKT"</p>
-              <h4>- Klant </h4>
+              <p>
+                "Nadat de vorige firma mij in de steek had gelaten heeft BDR
+                ENERGIE mij heel goed geholpen en uit de nood geholpen aan een
+                zeer redelijke prijs. nogmaals BEDANKT"
+              </p>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
-              <p>"Vandaag thuisbattery laten plaatsen van BDR ENERGIE. Een persoon met kennis vakkundig geplaatst en voldoende uitleg. Een aanrader."</p>
-              <h4>- Klant </h4>
+              <p>
+                "Vandaag thuisbattery laten plaatsen van BDR ENERGIE. Een
+                persoon met kennis vakkundig geplaatst en voldoende uitleg. Een
+                aanrader."
+              </p>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
-              <p>"Fantastische service van Elias en zijn team, niets was te veel gevraagd en alles is perfect geïnstalleerd."</p>
-              <h4>- Klant </h4>
+              <p>
+                "Fantastische service van Elias en zijn team, niets was te veel
+                gevraagd en alles is perfect geïnstalleerd."
+              </p>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
-              <p>"Alweer een top installatie bij ons geïnstalleerd!! Dit keer een batterij. Geen verlof moeten nemen, alles is verlopen zoals afgesproken."</p>
-              <h4>- Klant </h4>
+              <p>
+                "Alweer een top installatie bij ons geïnstalleerd!! Dit keer een
+                batterij. Geen verlof moeten nemen, alles is verlopen zoals
+                afgesproken."
+              </p>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
               <p>"Ik ben heel tevreden over de gepresenteerde werken."</p>
-              <h4>- Klant </h4>
+              <h4>- Klant</h4>
             </div>
             <div class="review">
-              <p>"De beste in het vak! Wij kregen een zeer uitgebreide en duidelijke uitleg, ze weten duidelijk over wat ze het hebben en staan ook steeds klaar om je vragen te beantwoorden. Ik kan ze zeker aanraden!"</p>
-              <h4>- Klant </h4>
+              <p>
+                "De beste in het vak! Wij kregen een zeer uitgebreide en
+                duidelijke uitleg, ze weten duidelijk over wat ze het hebben en
+                staan ook steeds klaar om je vragen te beantwoorden. Ik kan ze
+                zeker aanraden!"
+              </p>
+              <h4>- Klant</h4>
             </div>
           </div>
           <button class="arrow right" onclick="scrollReviews(1)">›</button>
         </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="scrollBar"></div>
+        </div>
       </div>
     </section>
-    
+
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-col">
-          <h3>BDR Energie</h3>
-          <p>Uw Energie is Ons Vak </br><i>voor particulieren en bedrijven</i></p>
+        <div class="footer-col brand">
+          <img
+            src="./assets/logo-white.png"
+            class="footer-logo"
+            alt="BDR Energie Logo"
+          />
+          <p>
+            Uw Energie is Ons Vak.<br /><span
+              >voor particulieren en bedrijven.</span
+            >
+          </p>
         </div>
 
         <div class="footer-col">
           <h4>Diensten</h4>
           <ul>
-            <li>Sanitair</li>
-            <li>Dakwerken</li>
-            <li>Zonnepanelen</li>
-            <li>Laadpalen</li>
-            <li>Thuisbatterijen</li>
+            <li><a href="#">Sanitair</a></li>
+            <li><a href="#">Dakwerken</a></li>
+            <li><a href="#">Zonnepanelen</a></li>
+            <li><a href="#">Laadpalen</a></li>
+            <li><a href="#">Thuisbatterijen</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4>Navigatie</h4>
           <ul>
-            <li>Email: info@bdrenergie.be</li>
-            <li>Tel: +32 493 29 91 75</li>
+            <li><a href="#">Projecten</a></li>
+            <li><a href="#">Over Ons</a></li>
           </ul>
+          <h4 class="cert-title">Certificaten</h4>
+          <a href="https://rescert.be/nl/list?res_category=2" target="_blank">
+            <img
+              src="./assets/rescert.png"
+              class="cert-img"
+              alt="Rescert Certificaat"
+            />
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-list">
+            <li>
+              Email: <a href="mailto:info@bdrenergie.be">info@bdrenergie.be</a>
+            </li>
+            <li>Tel: <a href="tel:+32493299175">+32 493 29 91 75</a></li>
+          </ul>
+          <div class="social-links">
+            <a
+              href="https://www.tiktok.com/@bdrenergie/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/bdrenergie/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/p/BDR-energie-100090454265218/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
         </div>
       </div>
 
@@ -229,6 +316,12 @@ nogmaals BEDANKT"</p>
         <p>© 2026 BDR Energie — Alle rechten voorbehouden</p>
       </div>
     </footer>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </body>
   <script src="./logic/main.js"></script>
+  <script src="./logic/recensies.js"></script>
 </html>

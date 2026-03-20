@@ -31,8 +31,31 @@
 
 /* ============ Page: Contact ============ */ 
 
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
+@media (max-width: 850px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-page { margin-top: 20px; }
+}
+
+/* ============ Page: Diensten ============ */
+
+@media (max-width: 950px) {
+  .service-block, 
+  .service-block:nth-child(even) {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .service-content li {
+    justify-content: center;
+  }
+
+  .service-image img {
+    height: 300px;
+  }
+
+  .service-content h2 {
+    font-size: 2rem;
   }
 }

@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - BDR Energie</title>
-    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/animaties.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="menu">
-        <img src="./assets/logo-bdr.png" id="logo" />
+        <a href="./index.html"><img src="./assets/logo-bdr.png" id="logo" /></a>
 
         <ul class="tabs" id="nav">
-          <li><a href="./contact.html">Diensten</a></li>
-          <li><a href="./contact.html">Projecten</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./diensten.html">Diensten</a></li>
+          <li><a href="./projecten.html">Projecten</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./contact.html">Over Ons</a></li>
+          <li><a href="./overons.html">Over Ons</a></li>
         </ul>
 
         <button id="offertebtn">Offerte Aanvragen</button>
@@ -24,74 +27,148 @@
         <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
       </div>
     </header>
-    <section class="contact">
-      <div class="contact-container">
-        <!-- LINKS -->
-        <div class="contact-info">
-          <h2>Contacteer ons</h2>
-          <p>Wij helpen u graag verder met uw project.</p>
+    <section class="contact-hero">
+      <h1>Neem contact op met <span id="word">BDR Energie</span></h1>
+      <p>
+        Heeft u vragen over zonnepanelen, laadpalen of sanitair? Ons team staat
+        voor u klaar.
+      </p>
+    </section>
 
-          <div class="info-block">
-            <p>📧 info@bedrijf.be</p>
-            <p>📞 +32 000 00 00 00</p>
-            <p>📍 België</p>
+    <section class="contact-page">
+      <div class="contact-grid">
+        <div class="contact-details">
+          <h3>Contactgegevens</h3>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span><a href="tel:+32493299175">+32 493 29 91 75</a></span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span
+              ><a href="mailto:info@bdrenergie.be">info@bdrenergie.be</a></span
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Sijselestraat 42, 8730 Beernem</span>
           </div>
 
-          <!-- Google Maps -->
-          <div class="map">
+          <div class="contact-map">
             <iframe
-              src="https://maps.google.com/maps?q=belgie&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.7365618413645!2d3.3361843!3d51.1317666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c35061694f6f7d%3A0x7d6c6e76878b4b7c!2sSijselestraat%2042%2C%208730%20Beernem!5e0!3m2!1snl!2sbe!4v1710500000000!5m2!1snl!2sbe"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
               loading="lazy"
             >
             </iframe>
           </div>
         </div>
 
-        <!-- RECHTS -->
-        <form class="contact-form">
-          <input type="text" placeholder="Naam" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Telefoon" />
-
-          <!-- Dropdown -->
-          <select required>
-            <option value="">Kies een dienst</option>
-            <option>Zonnepanelen</option>
-            <option>Thuisbatterijen</option>
-            <option>Laadpalen</option>
-            <option>Sanitair</option>
-            <option>Dakwerken</option>
-          </select>
-
-          <textarea placeholder="Uw bericht"></textarea>
-
-          <button type="submit">Verstuur bericht</button>
-        </form>
+        <div class="contact-form-wrapper">
+          <h3>Stuur ons een bericht</h3>
+          <form class="bdr-form">
+            <div class="form-group">
+              <input type="text" placeholder="Volledige Naam" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="E-mailadres" required />
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Onderwerp</option>
+                <option value="zonnepanelen">Zonnepanelen</option>
+                <option value="laadpalen">Laadpalen</option>
+                <option value="thuisbatterij">Thuisbatterijen</option>
+                <option value="sanitair">Sanitair / Dakwerken</option>
+                <option value="anders">Andere vraag</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                placeholder="Uw bericht of vraag..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Verzenden</button>
+          </form>
+        </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-col">
-          <h3>BDR Energie</h3>
-          <p>Uw Energie is Ons Vak </br><i>voor particulieren en bedrijven</i></p>
+        <div class="footer-col brand">
+          <img
+            src="./assets/logo-white.png"
+            class="footer-logo"
+            alt="BDR Energie Logo"
+          />
+          <p>
+            Uw Energie is Ons Vak.<br /><span
+              >voor particulieren en bedrijven.</span
+            >
+          </p>
         </div>
 
         <div class="footer-col">
           <h4>Diensten</h4>
           <ul>
-            <li>Zonnepanelen</li>
-            <li>Laadpalen & Thuisbatterijen</li>
-            <li>Sanitair</li>
-            <li>Dakwerken</li>
+            <li><a href="#">Sanitair</a></li>
+            <li><a href="#">Dakwerken</a></li>
+            <li><a href="#">Zonnepanelen</a></li>
+            <li><a href="#">Laadpalen</a></li>
+            <li><a href="#">Thuisbatterijen</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4>Navigatie</h4>
           <ul>
-            <li>Email: info@bdrenergie.be</li>
-            <li>Tel: +32 493 29 91 75</li>
+            <li><a href="#">Projecten</a></li>
+            <li><a href="#">Over Ons</a></li>
           </ul>
+          <h4 class="cert-title">Certificaten</h4>
+          <a href="https://rescert.be/nl/list?res_category=2" target="_blank">
+            <img
+              src="./assets/rescert.png"
+              class="cert-img"
+              alt="Rescert Certificaat"
+            />
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-list">
+            <li>
+              Email: <a href="mailto:info@bdrenergie.be">info@bdrenergie.be</a>
+            </li>
+            <li>Tel: <a href="tel:+32493299175">+32 493 29 91 75</a></li>
+          </ul>
+          <div class="social-links">
+            <a
+              href="https://www.tiktok.com/@bdrenergie/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/bdrenergie/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/p/BDR-energie-100090454265218/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
         </div>
       </div>
 
@@ -99,5 +176,10 @@
         <p>© 2026 BDR Energie — Alle rechten voorbehouden</p>
       </div>
     </footer>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </body>
 </html>

@@ -1,0 +1,149 @@
+/* ============ Page: Over Ons ============ */
+
+.about-hero {
+  background: var(--dark);
+  color: var(--white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.subtitle {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Statistieken */
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Afbeelding met badge */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0px var(--green);
+}
+
+.image-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: var(--black);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Waarden Grid */
+.our-values {
+  background: #fffef5;
+  padding: 80px 20px;
+  padding-top: 40px;
+}
+
+.values-header { text-align: center; margin-bottom: 50px; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #fefff5;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.value-card:hover { transform: translateY(-10px); }
+
+.value-card i {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+/* CTA Sectie */
+.about-cta {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../assets/banner.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.about-cta h2 { font-size: 2.5rem; margin-bottom: 15px; }
+.about-cta button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-cta button:hover { background: #3da13c; transform: scale(1.05); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container { grid-template-columns: 1fr; }
+  .about-image { order: -1; } /* Afbeelding boven tekst op mobiel */
+  .about-image img { box-shadow: 10px 10px 0px var(--green); }
+}

@@ -1,0 +1,32 @@
+/* ============ Knop Animaties ============ */
+
+.over-ons button, 
+.diensten button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.over-ons button:hover, 
+.diensten button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#offertebtn {
+  transition: all 0.3s ease;
+}
+
+#offertebtn:hover {
+  background-color: var(--green); /* Verandert naar groen bij hover */
+  transform: scale(1.05); /* Subtiel groter worden */
+  box-shadow: 0 5px 15px rgba(72, 183, 71, 0.3);
+}
+
+#offertebtn:active {
+  transform: scale(0.98); /* "Klik" effect */
+}
+
