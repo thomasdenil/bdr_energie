@@ -411,6 +411,10 @@ body {
   min-width: 330px;
 }
 
+.review h4 {
+  color: var(--green);
+}
+
 .arrow {
   position: absolute;
   z-index: 100;
