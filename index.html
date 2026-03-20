@@ -24,7 +24,12 @@
           <li><a href="./overons.html">Over Ons</a></li>
         </ul>
 
-        <button id="offertebtn">Offerte Aanvragen</button>
+        <button
+          id="offertebtn"
+          onclick="window.location.href = './index.html#offerte-sectie'"
+        >
+          Offerte Aanvragen
+        </button>
 
         <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
       </div>
@@ -55,7 +60,9 @@
             zonnepanelen tot laadpalen: wij begeleiden u van advies tot
             oplevering.
           </p>
-          <a href="./overons.html"><button>Over Ons</button></a>
+          <button onclick="window.location.href = './overons.html'">
+            Over Ons
+          </button>
         </div>
       </div>
     </section>
@@ -89,83 +96,102 @@
       </div>
     </section>
 
-    <section class="diensten">
+    <section class="diensten" id="diensten-section">
       <span class="diensten-btn-area">
-        <a href="./diensten.html"><button>Diensten</button></a>
+        <button onclick="window.location.href = './diensten.html'">
+          Diensten
+        </button>
       </span>
-      <div class="diensten-grid">
-        <span class="diensten-img-area">
-          <img src="./assets/banner.png" id="banner-pic" />
-        </span>
-        <span>
-          <div class="dienst">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 4V2M12 22v-2M4 12H2m20 0h-2M5 5l-1-1m16 16l-1-1M5 19l-1 1m16-16l-1 1M12 8a4 4 0 100 8 4 4 0 000-8z"
-                />
-              </svg>
-            </div>
-            <span>
-              <h3>Zonnepanelen</h3>
-              <p>Maximaal rendement met duurzame energie op maat.</p>
-            </span>
-          </div>
 
-          <div class="dienst">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M6 7h12v10H6zM9 21h6" />
-              </svg>
-            </div>
-            <span>
-              <h3>Thuisbatterijen</h3>
-              <p>Bewaar energie voor later gebruik.</p>
-            </span>
-          </div>
+      <div class="diensten-row">
+        <div class="diensten-img-container animate-on-scroll fade-in-left">
+          <img src="./assets/banner.png" alt="Zonnepanelen realisatie" />
+        </div>
 
-          <div class="dienst">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M7 2v11h3l-1 9 6-12h-4l1-8z" />
-              </svg>
+        <div class="diensten-list">
+          <a
+            href="./diensten.html#zonnepanelen"
+            class="dienst-link animate-on-scroll fade-in-right"
+            data-delay="100"
+          >
+            <div class="dienst">
+              <span class="dienst-number">01</span>
+              <div class="dienst-content">
+                <h3>Zonnepanelen</h3>
+                <p>Maximaal rendement met duurzame energie op maat.</p>
+              </div>
+              <i class="fas fa-arrow-right list-arrow"></i>
             </div>
-            <span>
-              <h3>Laadpalen</h3>
-              <p>Efficiënt laden voor uw elektrische wagen.</p>
-            </span>
-          </div>
-        </span>
+          </a>
+
+          <a
+            href="./diensten.html#thuisbatterijen"
+            class="dienst-link animate-on-scroll fade-in-right"
+            data-delay="300"
+          >
+            <div class="dienst">
+              <span class="dienst-number">02</span>
+              <div class="dienst-content">
+                <h3>Thuisbatterijen</h3>
+                <p>Bewaar energie voor later gebruik.</p>
+              </div>
+              <i class="fas fa-arrow-right list-arrow"></i>
+            </div>
+          </a>
+
+          <a
+            href="./diensten.html#laadpalen"
+            class="dienst-link animate-on-scroll fade-in-right"
+            data-delay="500"
+          >
+            <div class="dienst">
+              <span class="dienst-number">03</span>
+              <div class="dienst-content">
+                <h3>Laadpalen</h3>
+                <p>Efficiënt laden voor uw wagen.</p>
+              </div>
+              <i class="fas fa-arrow-right list-arrow"></i>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="diensten-grid">
-        <span>
-          <div class="dienst">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M3 10l9-7 9 7v10H3z" />
-              </svg>
-            </div>
-            <span>
-              <h3>Dakwerken</h3>
-              <p>Een sterke basis voor uw woning.</p>
-            </span>
-          </div>
 
-          <div class="dienst">
-            <div class="icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M7 7h10M7 12h10M7 17h6" />
-              </svg>
+      <div class="diensten-row reverse">
+        <div class="diensten-list">
+          <a
+            href="./diensten.html#dakwerken"
+            class="dienst-link animate-on-scroll fade-in-left"
+            data-delay="100"
+          >
+            <div class="dienst">
+              <span class="dienst-number">04</span>
+              <div class="dienst-content">
+                <h3>Dakwerken</h3>
+                <p>Een sterke basis voor uw woning.</p>
+              </div>
+              <i class="fas fa-arrow-right list-arrow"></i>
             </div>
-            <span>
-              <h3>Sanitair</h3>
-              <p>Comfort en kwaliteit voor uw woning.</p>
-            </span>
-          </div>
-        </span>
-        <span class="diensten-img-area">
-          <img src="./assets/winter.jpeg" id="winter-pic" />
-        </span>
+          </a>
+
+          <a
+            href="./diensten.html#sanitair"
+            class="dienst-link animate-on-scroll fade-in-left"
+            data-delay="300"
+          >
+            <div class="dienst">
+              <span class="dienst-number">05</span>
+              <div class="dienst-content">
+                <h3>Sanitair</h3>
+                <p>Comfort en kwaliteit voor uw woning.</p>
+              </div>
+              <i class="fas fa-arrow-right list-arrow"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="diensten-img-container animate-on-scroll fade-in-right">
+          <img src="./assets/winter.jpeg" alt="Sanitair werken" />
+        </div>
       </div>
     </section>
 
@@ -235,6 +261,79 @@
         </div>
         <div class="progress-container">
           <div class="progress-bar" id="scrollBar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-offerte" id="offerte-sectie">
+      <div class="offerte-container animate-on-scroll fade-in-up">
+        <div class="offerte-text">
+          <span class="subtitle">Direct aan de slag</span>
+          <h2>Klaar om te <span id="word">besparen</span>?</h2>
+          <p>
+            Vul het formulier in voor een vrijblijvend voorstel of een algemene
+            vraag. Wij nemen binnen 48 uur contact met u op.
+          </p>
+
+          <div class="offerte-features">
+            <div class="feat">
+              <i class="fas fa-check"></i> Gratis dakanalyse
+            </div>
+            <div class="feat">
+              <i class="fas fa-check"></i> Persoonlijk advies
+            </div>
+            <div class="feat">
+              <i class="fas fa-check"></i> Geen verborgen kosten
+            </div>
+          </div>
+        </div>
+
+        <div class="offerte-card">
+          <form class="bdr-offerte-form">
+            <div class="form-row">
+              <input type="text" placeholder="Naam" required />
+              <input type="email" placeholder="E-mailadres" required />
+            </div>
+
+            <div class="form-group">
+              <select id="aanvraag-type" onchange="toggleFormFields()">
+                <option value="offerte" selected>
+                  Ik wil een gratis offerte aanvragen
+                </option>
+                <option value="vraag">Ik heb een algemene vraag</option>
+              </select>
+            </div>
+
+            <div id="extra-offerte-velden" class="hidden-fields">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Adres + Huisnummer (voor dakanalyse)"
+                />
+              </div>
+              <div class="form-row">
+                <select>
+                  <option value="" disabled selected>Type installatie</option>
+                  <option value="zonnepanelen">Zonnepanelen</option>
+                  <option value="batterij">Thuisbatterij</option>
+                  <option value="laadpaal">Laadpaal</option>
+                  <option value="totaal">Totaalpakket</option>
+                </select>
+                <input type="number" placeholder="Jaarverbruik (kWh)" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="Uw bericht of extra info..."
+                rows="4"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Verzenden <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
     </section>
