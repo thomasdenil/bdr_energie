@@ -260,13 +260,12 @@ body {
 .values-header { 
   text-align: center; 
   margin-bottom: 50px; 
-  color: #fbfdfb;
 }
 
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -280,7 +279,7 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.value-card:hover { transform: translateY(-10px); }
+.value-card:hover { transform: translateY(-5px); }
 
 .value-card i {
   font-size: 2.5rem;

@@ -221,7 +221,7 @@
     "description": "Een grootschalige zonnepanelen-installatie op het dak van een Delhaize supermarkt om het hoge energieverbruik van de koelinstallaties direct te compenseren met groene stroom.",
     "location": "Regio West-Vlaanderen",
     "image": "./assets/projecten/Industrieel_Zonnepanelen_Delhaize.jpg",
-    "tag": "Zonnepanelen"
+    "tag": ["Zonnepanelen", "kmo"]
   },
   {
     "title": "Infrarood Verwarming Koksijde",
