@@ -24,16 +24,8 @@
     "tag": "Zonnepanelen"
   },
   {
-    "title": "Maatwerk Airco-installatie",
-    "category": "pump",
-    "description": "Een airco-installatie waarbij de buitenunit is afgewerkt met een omkasting in exact dezelfde kleur als het buitenschrijnwerk voor een naadloze integratie.",
-    "location": "Assenede",
-    "image": "./assets/projecten/Maatwerk_Airco_Assenede.png",
-    "tag": "Airco"
-  },
-  {
     "title": "Residentiële Airco Brugge",
-    "category": "pump",
+    "category": "sanitary",
     "description": "Een airco-installatie in een woning te Brugge die zorgt voor een fluisterstille koeling en verwarming met een minimaal energieverbruik.",
     "location": "Brugge",
     "image": "./assets/projecten/Particulier_Airco_Brugge.jpg",
@@ -121,12 +113,20 @@
   },
   {
     "title": "Airco-installatie Lokeren",
-    "category": "pump",
+    "category": "sanitary",
     "description": "Voor een particuliere woning in Lokeren zorgden wij voor een energiezuinige airco-oplossing die het hele jaar door garant staat voor een optimaal en gezond binnenklimaat.",
     "location": "Lokeren",
     "image": "./assets/projecten/Particulier_Airco_Lokeren.jpg",
     "tag": "Airco"
   },
+  {
+    "title": "Maatwerk Airco-installatie",
+    "category": "sanitary",
+    "description": "Een airco-installatie waarbij de buitenunit is afgewerkt met een omkasting in exact dezelfde kleur als het buitenschrijnwerk voor een naadloze integratie.",
+    "location": "Assenede",
+    "image": "./assets/projecten/Maatwerk_Airco_Assenede.png",
+    "tag": "Airco"
+    },
     {
     "title": "Thuisbatterij GoodWe",
     "category": "battery",
@@ -157,6 +157,14 @@
     "description": "Installatie van een 15kWh batterijsysteem om het zelfverbruik van de opgewekte zonne-energie te maximaliseren en de afhankelijkheid van het stroomnet te verkleinen.",
     "location": "Lokeren",
     "image": "./assets/projecten/Particulier_Thuisbatterij_15kWh.jpg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Huawei Energie-ecosysteem",
+    "category": "battery",
+    "description": "Installatie van een Huawei omvormer en bijbehorende thuisbatterij in Middelkerke, waarbij het modulaire systeem zorgt voor een maximale opslag van zelfopgewekte zonne-energie.",
+    "location": "Middelkerke",
+    "image": "./assets/projecten/Particulier_Huawei_Batterij_Middelkerke.jpg",
     "tag": "Thuisbatterij"
   },
   {
@@ -222,5 +230,53 @@
     "location": "Koksijde",
     "image": "./assets/projecten/Particulier_Infrarood_Koksijde.jpg",
     "tag": "Verwarming"
+  },
+  {
+    "title": "Asbestverwijdering & Dakrenovatie",
+    "category": "roof",
+    "description": "Een veilige sanering van asbesthoudende dakbedekking gevolgd door een volledige vernieuwing met hoogwaardige isolatie en moderne dakpannen bij een particuliere woning.",
+    "location": "Aarschot",
+    "image": "./assets/projecten/Particulier_Asbest_Renovatie.jpg",
+    "tag": "Dakwerken"
+  },
+  {
+    "title": "LG Warmtepompboiler",
+    "category": "sanitary",
+    "description": "Installatie van een LG warmtepompboiler voor de duurzame productie van warm tapwater, waarbij tot 75% minder energie wordt verbruikt vergeleken met een traditionele boiler.",
+    "location": "Locatie invullen",
+    "image": "./assets/projecten/Particulier_Warmtepompboiler_LG.jpg",
+    "tag": "Warmtepomp"
+  },
+  {
+    "title": "Inbouw Laadstation",
+    "category": "charger",
+    "description": "Een strakke wandmontage van een laadstation bij een particuliere woning.",
+    "location": "Blankenberge",
+    "image": "./assets/projecten/Particulier_Laadpaal_Muur.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "Airco Herentals",
+    "category": "sanitary",
+    "description": "Installatie van een buitenunit waarbij de beschermkap in exact dezelfde kleur als het buitenschrijnwerk is uitgevoerd voor een onopvallende integratie in de gevel.",
+    "location": "Herentals",
+    "image": "./assets/projecten/Airco_Kleurmatch_Ramen.png",
+    "tag": "Airco"
+  },
+  {
+    "title": "Laadstation op Standvoet",
+    "category": "charger",
+    "description": "Een vrijstaande laadoplossing gemonteerd op een robuuste standvoet.",
+    "location": "Aalst",
+    "image": "./assets/projecten/Particulier_Laadpaal_Voetstuk.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "SolaX Hybride Opslag",
+    "category": "battery",
+    "description": "Een geavanceerde thuisbatterij-installatie met een SolaX hybride systeem, ontworpen om de zelfconsumptie van zonne-energie te maximaliseren en het netgebruik te beperken.",
+    "location": "Moorsele",
+    "image": "./assets/projecten/Particulier_Solax_Batterij.jpg",
+    "tag": "Thuisbatterij"
   }
 ]
