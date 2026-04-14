@@ -9,3 +9,4 @@ Website
 - [ ] video pause on mobile (performance)
 - [ ] fallback image if video doesn’t load
 - [ ] cut the video ending
+- [ ] 404 page

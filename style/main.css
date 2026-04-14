@@ -208,7 +208,7 @@ body {
 
 /* ============ Sectie: Waarden ============ */ 
 
-
+/* 
 .waarden-container{
   background-color: var(--dark);
   color: var(--white);
@@ -241,7 +241,47 @@ body {
 
 .waarde p {
   padding: 20px;
+} */
+
+
+/* Waarden Grid */
+.our-values {
+  background: #323232;
+  padding: 80px 20px;
+  padding-top: 40px;
 }
+
+.values-header { 
+  text-align: center; 
+  margin-bottom: 50px; 
+  color: #fbfdfb;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #fefff5;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.value-card:hover { transform: translateY(-10px); }
+
+.value-card i {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
 
 /* ============ Sectie: Diensten ============ */ 
 

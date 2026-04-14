@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Residentie Beernem",
+    "category": "solar",
+    "description": "Installatie van 14 full black panelen met een Huawei omvormer.",
+    "location": "Beernem",
+    "image": "./assets/banner.png",
+    "tag": "Zonnepanelen"
+  },
+  {
+    "title": "Systeemupgrade Brugge",
+    "category": "battery",
+    "description": "Thuisbatterij van 10kWh gekoppeld aan bestaande installatie.",
+    "location": "Brugge",
+    "image": "./assets/winter.jpeg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Totaalrenovatie Gent",
+    "category": "roof",
+    "description": "Volledige dakvernieuwing inclusief isolatie en afwerking.",
+    "location": "Gent",
+    "image": "./assets/imagefront.jpeg",
+    "tag": "Dakwerken"
+  }
+]

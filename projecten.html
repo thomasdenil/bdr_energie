@@ -11,8 +11,9 @@
   <body>
     <header class="header">
       <div class="menu">
-        <a href="./index.html"><img src="./assets/logo-bdr.png" id="logo" /></a>
-
+        <a href="./index.html"
+          ><img src="./assets/logo-bdr.png" id="logo" alt="Logo"
+        /></a>
         <ul class="tabs" id="nav">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./diensten.html">Diensten</a></li>
@@ -20,10 +21,7 @@
           <li><a href="./contact.html">Contact</a></li>
           <li><a href="./overons.html">Over Ons</a></li>
         </ul>
-
         <button id="offertebtn">Offerte Aanvragen</button>
-
-        <!-- <div class="hamburger" onclick="toggleMenu()">☰</div> -->
       </div>
     </header>
 
@@ -39,82 +37,39 @@
 
     <section class="projects-filter">
       <div class="filter-buttons">
-        <button class="filter-btn active" onclick="filterProjects('all')">
+        <button
+          class="filter-btn active"
+          onclick="filterProjects(event, 'all')"
+        >
           Alles
         </button>
-        <button class="filter-btn" onclick="filterProjects('solar')">
+        <button class="filter-btn" onclick="filterProjects(event, 'solar')">
           Zonnepanelen
         </button>
-        <button class="filter-btn" onclick="filterProjects('battery')">
+        <button class="filter-btn" onclick="filterProjects(event, 'battery')">
           Batterijen
         </button>
-        <button class="filter-btn" onclick="filterProjects('sanitary')">
-          Sanitair & Dak
+        <button class="filter-btn" onclick="filterProjects(event, 'sanitary')">
+          Sanitair
+        </button>
+        <button class="filter-btn" onclick="filterProjects(event, 'roof')">
+          Dak
+        </button>
+        <button class="filter-btn" onclick="filterProjects(event, 'charger')">
+          Laadpalen
+        </button>
+        <button class="filter-btn" onclick="filterProjects(event, 'pump')">
+          Warmtepomp
         </button>
       </div>
     </section>
 
     <section class="projects-grid-container">
       <div class="projects-grid" id="projectGrid">
-        <div class="project-card solar">
-          <div class="project-img">
-            <img src="./assets/banner.png" alt="Zonnepanelen Beernem" />
-            <div class="project-tag">Zonnepanelen</div>
-          </div>
-          <div class="project-info">
-            <h3>Residentie Beernem</h3>
-            <p>
-              Installatie van 14 full black panelen met een Huawei omvormer.
-            </p>
-            <span class="project-location"
-              ><i class="fas fa-map-marker-alt"></i> Beernem</span
-            >
-          </div>
-        </div>
-
-        <div class="project-card battery">
-          <div class="project-img">
-            <img src="./assets/winter.jpeg" alt="Thuisbatterij Brugge" />
-            <div class="project-tag">Thuisbatterij</div>
-          </div>
-          <div class="project-info">
-            <h3>Systeemupgrade Brugge</h3>
-            <p>Thuisbatterij van 10kWh gekoppeld aan bestaande installatie.</p>
-            <span class="project-location"
-              ><i class="fas fa-map-marker-alt"></i> Brugge</span
-            >
-          </div>
-        </div>
-
-        <div class="project-card sanitary">
-          <div class="project-img">
-            <img src="./assets/imagefront.jpeg" alt="Dakwerken Gent" />
-            <div class="project-tag">Dakwerken</div>
-          </div>
-          <div class="project-info">
-            <h3>Totaalrenovatie Gent</h3>
-            <p>Volledige dakvernieuwing inclusief isolatie en afwerking.</p>
-            <span class="project-location"
-              ><i class="fas fa-map-marker-alt"></i> Gent</span
-            >
-          </div>
-        </div>
-
-        <div class="project-card solar">
-          <div class="project-img">
-            <img src="./assets/banner.png" alt="Industriële panelen" />
-            <div class="project-tag">Zonnepanelen</div>
-          </div>
-          <div class="project-info">
-            <h3>KMO Unit Maldegem</h3>
-            <p>Industriële installatie van 42 panelen voor eigen verbruik.</p>
-            <span class="project-location"
-              ><i class="fas fa-map-marker-alt"></i> Maldegem</span
-            >
-          </div>
-        </div>
+        <p>Projecten laden...</p>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col brand">
@@ -124,9 +79,9 @@
             alt="BDR Energie Logo"
           />
           <p>
-            Uw Energie is Ons Vak.<br /><span
-              >voor particulieren en bedrijven.</span
-            >
+            Uw Energie is Ons Vak.<br /><span>
+              voor particulieren en bedrijven.
+            </span>
           </p>
         </div>
 
@@ -195,6 +150,7 @@
       </div>
     </footer>
 
+    <script src="./logic/projecten.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
