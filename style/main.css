@@ -183,6 +183,7 @@ body {
   justify-content: space-between;
   margin-left: 100px; 
   margin-right: 100px;
+  margin-bottom: 40px;
   gap: 70px;
 }
 
@@ -209,7 +210,9 @@ body {
 }
 
 #over-ons-pic {
-  height: 400px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 /* ============ Sectie: Waarden ============ */ 
@@ -258,7 +261,7 @@ body {
 
 .values-header { 
   text-align: center; 
-  margin-bottom: 50px; 
+  margin-bottom: 40px; 
 }
 
 .values-grid {
