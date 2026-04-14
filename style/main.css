@@ -4,6 +4,12 @@
   src: url(../assets/font/Garet/Garet-Book.woff); 
 }
 
+@font-face {
+  font-family: Work-sans;
+  src: url(../assets/font/WorkSans/WorkSans-Regular.ttf); 
+} 
+
+
 :root {
   --green: #48b747;
   --black: #242424;

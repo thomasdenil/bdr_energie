@@ -1,26 +1,34 @@
 [
   {
-    "title": "Residentie Beernem",
+    "title": "Historisch Project Lievegem",
     "category": "solar",
-    "description": "Installatie van 14 full black panelen met een Huawei omvormer.",
-    "location": "Beernem",
-    "image": "./assets/banner.png",
+    "description": "Een unieke installatie op een historisch kerkgebouw met een authentiek leien dak.",
+    "location": "Lievegem",
+    "image": "./assets/projecten/Kerk_Zonnepannelen_Lievegem.jpg",
+    "tag": ["Zonnepanelen", "kmo"]
+  },
+  {
+    "title": "Nieuwbouwproject Gavere",
+    "category": "solar",
+    "description": "Samen met Altro Invest hebben wij deze moderne nieuwbouwwoning volledig instapklaar gemaakt op vlak van energie. ",
+    "location": "Gavere",
+    "image": "./assets/projecten/Nieuwbouw_Zonnepannelen_Gavere.jpg",
     "tag": "Zonnepanelen"
   },
   {
-    "title": "Systeemupgrade Brugge",
-    "category": "battery",
-    "description": "Thuisbatterij van 10kWh gekoppeld aan bestaande installatie.",
-    "location": "Brugge",
-    "image": "./assets/winter.jpeg",
-    "tag": "Thuisbatterij"
+  "title": "Tearoom Madame Aneth",
+  "category": "solar",
+  "description": "Bij Tearoom Madame Aneth zorgden we voor een efficiënte zonnepanelen-installatie die perfect is afgestemd op het dagverbruik van de zaak.",
+  "location": "Brugge",
+  "image": "./assets/projecten/MadAneth_Zonnepannelen_Brugge.png",
+  "tag": "Zonnepanelen"
   },
   {
-    "title": "Totaalrenovatie Gent",
-    "category": "roof",
-    "description": "Volledige dakvernieuwing inclusief isolatie en afwerking.",
-    "location": "Gent",
-    "image": "./assets/imagefront.jpeg",
-    "tag": "Dakwerken"
+    "title": "Nieuwbouw Zeebrugge",
+    "category": ["solar", "roof"],
+    "description": "Voor deze moderne nieuwbouw in Zeebrugge realiseerden wij de vakkundige plaatsing van het dak tot de installatie van de zonnepanelen.",
+    "location": "Zeebrugge",
+    "image": "./assets/projecten/Nieuwbouw_Zonnepannelen_Zeebrugge.jpg",
+    "tag": ["Zonnepanelen", "Dak"]
   }
 ]
