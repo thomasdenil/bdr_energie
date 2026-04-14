@@ -1,4 +1,6 @@
 let allProjects = [];
+let filteredProjects = [];
+let visibleCount = 6;
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('./data/projecten.json')
@@ -8,27 +10,41 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             allProjects = data;
-            displayProjects(allProjects);
+            filteredProjects = allProjects;
+            displayProjects();
         })
         .catch(error => {
             console.error('Fout:', error);
-            document.getElementById('projectGrid').innerHTML = '<p>Er is een fout opgetreden bij het laden van de projecten.</p>';
+            const grid = document.getElementById('projectGrid');
+            if(grid) grid.innerHTML = '<p>Er is een fout opgetreden bij het laden van de projecten.</p>';
         });
 });
 
-function displayProjects(projects) {
+function displayProjects() {
     const grid = document.getElementById('projectGrid');
-    
-    if (projects.length === 0) {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const loadingIcon = document.getElementById('loading-icon');
+
+    if (loadingIcon) loadingIcon.style.display = 'none';
+
+    const projectsToShow = filteredProjects.slice(0, visibleCount);
+
+    if (projectsToShow.length === 0) {
         grid.innerHTML = '<p>Geen projecten gevonden in deze categorie.</p>';
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
         return;
     }
 
-    grid.innerHTML = projects.map(project => `
-        <div class="project-card ${project.category}">
+    grid.innerHTML = projectsToShow.map(project => `
+        <div class="project-card ${project.category} animate-in">
             <div class="project-img">
                 <img src="${project.image}" alt="${project.title}" loading="lazy" />
-                <div class="project-tag">${project.tag}</div>
+                <div class="project-tags">
+                    ${Array.isArray(project.tag) 
+                        ? project.tag.map(t => `<span class="tag">${t}</span>`).join('') 
+                        : `<span class="tag">${project.tag}</span>`
+                    }
+                </div>
             </div>
             <div class="project-info">
                 <h3>${project.title}</h3>
@@ -39,19 +55,42 @@ function displayProjects(projects) {
             </div>
         </div>
     `).join('');
+
+    if (loadMoreBtn) {
+        if (visibleCount < filteredProjects.length) {
+            loadMoreBtn.style.display = 'inline-block';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
 }
 
 function filterProjects(e, category) {
-    // 1. Update de actieve knop styling
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
-    
     e.currentTarget.classList.add('active');
 
+    // Reset de teller
+    visibleCount = 6;
+
     if (category === 'all') {
-        displayProjects(allProjects);
+        filteredProjects = allProjects;
     } else {
-        const filtered = allProjects.filter(p => p.category === category);
-        displayProjects(filtered);
+        filteredProjects = allProjects.filter(p => p.category === category);
     }
+    
+    displayProjects();
+}
+
+function loadMore() {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const loadingIcon = document.getElementById('loading-icon');
+
+    if (loadingIcon) loadingIcon.style.display = 'block';
+    if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+
+    setTimeout(() => {
+        visibleCount += 3;
+        displayProjects();
+    }, 500);
 }

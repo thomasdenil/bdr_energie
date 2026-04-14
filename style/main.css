@@ -274,7 +274,7 @@ body {
 .value-card {
   background: #fefff5;
   padding: 40px;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -487,6 +487,35 @@ body {
   gap: 20px;
   padding: 20px 0;
   will-change: transform;
+}
+
+/* sterren */
+.stars {
+  color: #f1c40f; 
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.stars i {
+  margin-right: 2px;
+}
+
+.review-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  flex-shrink: 0;
+}
+
+.review {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+  border-color: var(--green);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* ============ Sectie: Offerte ============ */

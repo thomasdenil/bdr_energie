@@ -4,7 +4,7 @@
     "category": "solar",
     "description": "Een unieke installatie op een historisch kerkgebouw met een authentiek leien dak.",
     "location": "Lievegem",
-    "image": "./assets/projecten/Kerk_Zonnepannelen_Lievegem.jpg",
+    "image": "./assets/projecten/Kerk_Zonnepanelen_Lievegem.jpg",
     "tag": ["Zonnepanelen", "kmo"]
   },
   {
@@ -12,23 +12,151 @@
     "category": "solar",
     "description": "Samen met Altro Invest hebben wij deze moderne nieuwbouwwoning volledig instapklaar gemaakt op vlak van energie. ",
     "location": "Gavere",
-    "image": "./assets/projecten/Nieuwbouw_Zonnepannelen_Gavere.jpg",
+    "image": "./assets/projecten/Nieuwbouw_Zonnepanelen_Gavere.jpg",
     "tag": "Zonnepanelen"
   },
   {
-  "title": "Tearoom Madame Aneth",
-  "category": "solar",
-  "description": "Bij Tearoom Madame Aneth zorgden we voor een efficiënte zonnepanelen-installatie die perfect is afgestemd op het dagverbruik van de zaak.",
-  "location": "Brugge",
-  "image": "./assets/projecten/MadAneth_Zonnepannelen_Brugge.png",
-  "tag": "Zonnepanelen"
+    "title": "Tearoom Madame Aneth",
+    "category": "solar",
+    "description": "Bij Tearoom Madame Aneth zorgden we voor een efficiënte zonnepanelen-installatie die perfect is afgestemd op het dagverbruik van de zaak.",
+    "location": "Brugge",
+    "image": "./assets/projecten/MadAneth_Zonnepanelen_Brugge.png",
+    "tag": "Zonnepanelen"
+  },
+  {
+    "title": "Maatwerk Airco-installatie",
+    "category": "pump",
+    "description": "Een airco-installatie waarbij de buitenunit is afgewerkt met een omkasting in exact dezelfde kleur als het buitenschrijnwerk voor een naadloze integratie.",
+    "location": "Assenede",
+    "image": "./assets/projecten/Maatwerk_Airco_Assenede.png",
+    "tag": "Airco"
+  },
+  {
+    "title": "Residentiële Airco Brugge",
+    "category": "pump",
+    "description": "Een airco-installatie in een woning te Brugge die zorgt voor een fluisterstille koeling en verwarming met een minimaal energieverbruik.",
+    "location": "Brugge",
+    "image": "./assets/projecten/Particulier_Airco_Brugge.jpg",
+    "tag": "Airco"
   },
   {
     "title": "Nieuwbouw Zeebrugge",
-    "category": ["solar", "roof"],
+    "category": "solar",
     "description": "Voor deze moderne nieuwbouw in Zeebrugge realiseerden wij de vakkundige plaatsing van het dak tot de installatie van de zonnepanelen.",
     "location": "Zeebrugge",
-    "image": "./assets/projecten/Nieuwbouw_Zonnepannelen_Zeebrugge.jpg",
-    "tag": ["Zonnepanelen", "Dak"]
+    "image": "./assets/projecten/Nieuwbouw_Zonnepanelen_Zeebrugge.jpg",
+    "tag": "Zonnepanelen"
+  }, 
+  {
+    "title": "Nieuwbouw Zeebrugge",
+    "category": "roof",
+    "description": "Voor deze moderne nieuwbouw in Zeebrugge realiseerden wij de vakkundige plaatsing van het dak tot de installatie van de zonnepanelen.",
+    "location": "Zeebrugge",
+    "image": "./assets/projecten/Nieuwbouw_Dak_Zeebrugge.jpg",
+    "tag": "Dakwerken"
+  },
+  {
+    "title": "Industrieel Project S.Home",
+    "category": "solar",
+    "description": "Een zonnepanelen-installatie voor S.Home om hun bedrijfsvoering te verduurzamen en de energiekosten direct te minimaliseren.",
+    "location": "Asse",
+    "image": "./assets/projecten/SHome_Zonnepanelen_Asse.jpg",
+    "tag": ["Zonnepanelen", "kmo"]
+  },
+  {
+    "title": "Laadinfrastructuur S.Home",
+    "category": "charger",
+    "description": "Installatie van een slim laadstation bij S.Home te Asse voor een efficiënte en toekomstbestendige laadoplossing.",
+    "location": "Asse",
+    "image": "./assets/projecten/SHome_Laadpaal_Asse.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "Campus Mariagaard",
+    "category": "solar",
+    "description": "Een grootschalige zonnepanelen-installatie op de daken van Campus Mariagaard om de schoolomgeving te verduurzamen en de energiekosten aanzienlijk te verlagen.",
+    "location": "Wetteren",
+    "image": "./assets/projecten/SchoolMariagaard_Zonnepanelen_Wetteren.jpg",
+    "tag": "Zonnepanelen"
+  },
+  {
+    "title": "Totaalrenovatie Diksmuide",
+    "category": "sanitary",
+    "description": "Een sanitaire upgrade in een particuliere renovatiewoning, waarbij we modern comfort hebben gecombineerd met de installatie van energiezuinige vloerverwarming.",
+    "location": "Diksmuide",
+    "image": "./assets/projecten/Renovatie_Sanitair_Diksmuide.jpg",
+    "tag": "Sanitair & Verwarming"
+  }, 
+  {
+    "title": "Dakvernieuwing Beernem",
+    "category": "roof",
+    "description": "Een volledige dakrenovatie voor een particuliere woning in Beernem, waarbij we een duurzame en waterdichte basis hebben gelegd voor een jarenlang zorgeloos resultaat.",
+    "location": "Beernem",
+    "image": "./assets/projecten/Renovatie_Dak_Beernem.jpg",
+    "tag": "Dakwerken"
+  },
+  {
+    "title": "Retailpark Zonneproject",
+    "category": "solar",
+    "description": "Een grootschalige zonnepanelen-installatie op een winkelcentrum om de commerciële units te voorzien van groene energie en de ecologische voetafdruk van het complex te verkleinen.",
+    "location": "Zottegem",
+    "image": "./assets/projecten/Winkelcentrum_Zonnepanelen.jpg",
+    "tag": ["Zonnepanelen", "kmo"]
+  },
+    {
+    "title": "Duracell Smart Charging",
+    "category": "charger",
+    "description": "Installatie van een Duracell laadstation bij een particuliere woning, geoptimaliseerd voor maximaal laden op eigen zonne-energie.",
+    "location": "Regio West-Vlaanderen",
+    "image": "./assets/projecten/Particulier_Laadpaal_Duracell.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "Thuisbatterij Lievegem",
+    "category": "battery",
+    "description": "Een energieopslag van 40kWh voor een particuliere woning in Lievegem om maximale onafhankelijkheid van het stroomnet te garanderen.",
+    "location": "Lievegem",
+    "image": "./assets/projecten/Particulier_Thuisbatterij_Lievegem.jpg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Airco-installatie Lokeren",
+    "category": "pump",
+    "description": "Voor een particuliere woning in Lokeren zorgden wij voor een energiezuinige airco-oplossing die het hele jaar door garant staat voor een optimaal en gezond binnenklimaat.",
+    "location": "Lokeren",
+    "image": "./assets/projecten/Particulier_Airco_Lokeren.jpg",
+    "tag": "Airco"
+  },
+  {
+    "title": "Residentiële Thuisbatterij",
+    "category": "battery",
+    "description": "Installatie van een 15kWh batterijsysteem om het zelfverbruik van de opgewekte zonne-energie te maximaliseren en de afhankelijkheid van het stroomnet te verkleinen.",
+    "location": "Lokeren",
+    "image": "./assets/projecten/Particulier_Thuisbatterij_15kWh.jpg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Stedelijk Zonneproject Brussel",
+    "category": "solar",
+    "description": "Een unieke installatie waarbij de zonnepanelen op een speciaal ontworpen grondopstelling zijn geplaatst om de zoninval optimaal te benutten buiten de dakoppervlakte.",
+    "location": "Brussel",
+    "image": "./assets/projecten/Particulier_Zonnepanelen_Brussel.jpg",
+    "tag": "Zonnepanelen"
+  },
+  {
+    "title": "Easee Home Charging",
+    "category": "charger",
+    "description": "Een compacte en slimme Easee laadoplossing die onopvallend in de gevel is geïntegreerd en optimaal gebruikmaakt van de beschikbare stroomcapaciteit.",
+    "location": "Regio West-Vlaanderen",
+    "image": "./assets/projecten/Particulier_Laadpaal_Easee.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "Dakisolatie Project",
+    "category": "roof",
+    "description": "Een grondige isolatie van een hellend dak bij een particuliere woning om warmteverlies te minimaliseren en het energieverbruik direct te verlagen.",
+    "location": "Locatie invullen",
+    "image": "./assets/projecten/Particulier_Dakisolatie.jpg",
+    "tag": "Dakwerken"
   }
 ]

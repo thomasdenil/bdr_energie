@@ -40,7 +40,7 @@
 /* Grid Layout */
 .projects-grid-container {
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 10px auto 20px;
   padding: 0 20px;
 }
 
@@ -72,7 +72,7 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* 
 .project-tag {
   position: absolute;
   top: 15px;
@@ -84,6 +84,30 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+} */
+
+.project-tags {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 8px; /* Ruimte tussen de tags */
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--green);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tag:nth-child(2) {
+    background: var(--dark);
 }
 
 .project-info {
@@ -110,4 +134,54 @@
 .project-location i {
   color: var(--green);
   margin-right: 5px;
+}
+
+/* laad meer knop */
+
+/* Loading icon*/
+/* Styling voor de laad-animatie container (blijft hetzelfde) */
+#loading-icon {
+    display: none; 
+    text-align: center;
+    margin: 40px auto;
+}
+
+#loading-icon svg {
+    width: 60px;
+    height: 60px;
+}
+
+#loading-icon #bliksem {
+    fill: #27ae60; 
+}
+
+#loading-icon #stralen {
+    fill: #242424;
+    transform-origin: 50% 50%; 
+    animation: rotateRaysCentered 1.5s linear infinite; 
+}
+
+@keyframes rotateRaysCentered {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loadMoreBtn {
+    padding: 12px 30px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#loadMoreBtn:hover {
+    background-color: var(--green);
+    transform: translateY(-2px);
 }
