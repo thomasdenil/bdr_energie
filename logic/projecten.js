@@ -92,5 +92,5 @@ function loadMore() {
     setTimeout(() => {
         visibleCount += 3;
         displayProjects();
-    }, 500);
+    }, 0);
 }
