@@ -85,7 +85,7 @@
     "description": "Een sanitaire upgrade in een particuliere renovatiewoning, waarbij we modern comfort hebben gecombineerd met de installatie van energiezuinige vloerverwarming.",
     "location": "Diksmuide",
     "image": "./assets/projecten/Renovatie_Sanitair_Diksmuide.jpg",
-    "tag": "Sanitair & Verwarming"
+    "tag": "Verwarming"
   }, 
   {
     "title": "Dakvernieuwing Beernem",
@@ -127,12 +127,12 @@
     "image": "./assets/projecten/Particulier_Airco_Lokeren.jpg",
     "tag": "Airco"
   },
-  {
-    "title": "Residentiële Thuisbatterij",
+    {
+    "title": "Thuisbatterij GoodWe",
     "category": "battery",
-    "description": "Installatie van een 15kWh batterijsysteem om het zelfverbruik van de opgewekte zonne-energie te maximaliseren en de afhankelijkheid van het stroomnet te verkleinen.",
-    "location": "Lokeren",
-    "image": "./assets/projecten/Particulier_Thuisbatterij_15kWh.jpg",
+    "description": "Plaatsing van een 10kWh GoodWe opslagsysteem voor een optimaal beheer van de opgewekte zonne-energie en een hogere onafhankelijkheid van het energienet.",
+    "location": "Regio West-Vlaanderen",
+    "image": "./assets/projecten/Particulier_Thuisbatterij_Goodwe.jpg",
     "tag": "Thuisbatterij"
   },
   {
@@ -142,6 +142,22 @@
     "location": "Brussel",
     "image": "./assets/projecten/Particulier_Zonnepanelen_Brussel.jpg",
     "tag": "Zonnepanelen"
+  },
+  {
+    "title": "AEG Energieopslag Deinze",
+    "category": "battery",
+    "description": "Installatie van een hoogwaardige AEG omvormer gecombineerd met een Full Black thuisbatterij voor een krachtige en visueel uniforme energie-oplossing.",
+    "location": "Deinze",
+    "image": "./assets/projecten/Particulier_AEG_Batterij_Deinze.jpg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Residentiële Thuisbatterij",
+    "category": "battery",
+    "description": "Installatie van een 15kWh batterijsysteem om het zelfverbruik van de opgewekte zonne-energie te maximaliseren en de afhankelijkheid van het stroomnet te verkleinen.",
+    "location": "Lokeren",
+    "image": "./assets/projecten/Particulier_Thuisbatterij_15kWh.jpg",
+    "tag": "Thuisbatterij"
   },
   {
     "title": "Easee Home Charging",
@@ -155,8 +171,56 @@
     "title": "Dakisolatie Project",
     "category": "roof",
     "description": "Een grondige isolatie van een hellend dak bij een particuliere woning om warmteverlies te minimaliseren en het energieverbruik direct te verlagen.",
-    "location": "Locatie invullen",
+    "location": "Antwerpen",
     "image": "./assets/projecten/Particulier_Dakisolatie.jpg",
     "tag": "Dakwerken"
+  },
+  {
+    "title": "Tesla Wall Connector",
+    "category": "charger",
+    "description": "Installatie van een Tesla Wall Connector voor een krachtige laadoplossing aan huis, gekenmerkt door een hoge laadsnelheid en een gebruiksvriendelijke interface.",
+    "location": "Roeselare",
+    "image": "./assets/projecten/Particulier_Laadpaal_Tesla.jpg",
+    "tag": "Laadpaal"
+  },
+  {
+    "title": "Vloerverwarming Installatie",
+    "category": "sanitary",
+    "description": "Plaatsing van een energiezuinig vloerverwarmingssysteem voor een gelijkmatige warmteverdeling en een optimaal wooncomfort in de gehele woning.",
+    "location": "Mechelen",
+    "image": "./assets/projecten/Particulier_Vloerverwarming.jpg",
+    "tag": "Verwarming"
+  },
+  {
+    "title": "Dakrenovatie Eeklo",
+    "category": "roof",
+    "description": "Een volledige renovatie van een residentieel dak in Eeklo, inclusief vernieuwing van de dakbedekking en verbetering van de onderliggende structuur.",
+    "location": "Eeklo",
+    "image": "./assets/projecten/Particulier_Dakrenovatie_Eeklo.jpg",
+    "tag": "Dakwerken"
+  },
+  {
+    "title": "Batterijopslag op maat",
+    "category": "battery",
+    "description": "Een residentiële thuisbatterij in Hasselt, volledig geïntegreerd in een op maat gemaakte kast voor een nette afwerking en optimaal ruimtegebruik.",
+    "location": "Hasselt",
+    "image": "./assets/projecten/Particulier_Batterij_Maatwerk_Hasselt.jpg",
+    "tag": "Thuisbatterij"
+  },
+  {
+    "title": "Delhaize Supermarkt",
+    "category": "solar",
+    "description": "Een grootschalige zonnepanelen-installatie op het dak van een Delhaize supermarkt om het hoge energieverbruik van de koelinstallaties direct te compenseren met groene stroom.",
+    "location": "Regio West-Vlaanderen",
+    "image": "./assets/projecten/Industrieel_Zonnepanelen_Delhaize.jpg",
+    "tag": "Zonnepanelen"
+  },
+  {
+    "title": "Infrarood Verwarming Koksijde",
+    "category": "sanitary",
+    "description": "Installatie van energie-efficiënte infraroodpanelen in een woning te Koksijde voor een aangename, directe stralingswarmte en een lager verbruik.",
+    "location": "Koksijde",
+    "image": "./assets/projecten/Particulier_Infrarood_Koksijde.jpg",
+    "tag": "Verwarming"
   }
 ]
