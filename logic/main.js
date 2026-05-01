@@ -1,8 +1,8 @@
+// main.js
 function toggleMenu() {
-  document.getElementById("nav").classList.toggle("active");
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
 }
-
-// home diensten sectie
 
 document.addEventListener("DOMContentLoaded", function() {
   

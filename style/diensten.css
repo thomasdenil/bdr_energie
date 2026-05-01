@@ -1,6 +1,5 @@
 /* ============ Page: Diensten  ============ */
 
-/* Hero Sectie */
 .services-hero {
   background: var(--dark);
   color: var(--white);
@@ -14,7 +13,6 @@
   margin: 0 auto;
 }
 
-/* De Lijst met Detail Blokken */
 .services-detail-list {
   max-width: 1100px;
   margin: 80px auto;
@@ -25,13 +23,11 @@
   display: flex;
   align-items: center;
   gap: 80px;
-  margin-bottom: 150px; /* Ruimte tussen de verschillende diensten */
+  margin-bottom: 150px; 
   
-  /* Belangrijk: zorgt dat de titel onder het menu stopt bij een anchor link (#) */
   scroll-margin-top: 120px; 
 }
 
-/* Wisselt de layout om voor elk tweede blok (even nummers) */
 .service-block:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -57,7 +53,6 @@
   transform: scale(1.02);
 }
 
-/* Decoratieve nummers */
 .service-num {
   font-size: 4rem;
   font-weight: 900;
@@ -81,7 +76,6 @@
   font-size: 1.1rem;
 }
 
-/* Feature lijstjes met vinkjes */
 .service-content ul {
   list-style: none;
   padding: 0;
@@ -101,7 +95,6 @@
   font-size: 1.2rem;
 }
 
-/* CTA knop per dienst (optioneel) */
 .service-cta {
   display: inline-block;
   margin-top: 20px;
