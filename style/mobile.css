@@ -6,7 +6,7 @@
         margin-right: 20px;
         gap: 40px;
     }
-    
+
     .over-ons-container div p {
         margin-right: 0;
     }
@@ -52,20 +52,21 @@
         padding: 0 10px;
     }
 
-    .diensten-row, .diensten-row.reverse {
+    .diensten-row,
+    .diensten-row.reverse {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .diensten-img-container {
         height: 250px;
-        order: -1; 
+        order: -1;
     }
 
     .arrow {
         display: none;
     }
-    
+
     .recensies-wrapper {
         padding: 0 20px;
     }
@@ -101,7 +102,7 @@
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -117,66 +118,374 @@
     }
 }
 
-/* ============ Page: Contact ============ */ 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
 
-@media (max-width: 850px) {
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-page { margin-top: 20px; }
+    .tabs {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px 40px;
+    }
+
+    .tabs.active {
+        display: flex;
+    }
+
+    .tabs li::after {
+        content: none !important;
+    }
+
+    .tabs li {
+        text-align: left;
+        padding: 15px 0;
+    }
+
+    .tabs a {
+        font-size: 1.2rem;
+    }
+
+    .tabs a:hover {
+        color: var(--black);
+    }
+
+    #offertebtn {
+        display: none;
+    }
+}
+
+/* ============ Page: Contact ============ */
+
+@media (max-width: 1100px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form-wrapper {
+        padding: 40px;
+        order: 1;
+        border-bottom: 1px solid #eee;
+    }
+
+    .contact-details {
+        padding: 40px;
+        order: 2;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 60px 20px;
+    }
+
+    .contact-page {
+        margin-top: -30px;
+        padding: 0 10px;
+    }
+
+    .contact-form-wrapper,
+    .contact-details {
+        padding: 30px 20px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
 }
 
 /* ============ Page: Diensten ============ */
 
 @media (max-width: 950px) {
-  .service-block, 
-  .service-block:nth-child(even) {
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 100px;
-    text-align: center;
-  }
+    .services-hero {
+        padding: 80px 20px;
+    }
 
-  .service-content li {
-    justify-content: center;
-  }
+    .services-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
 
-  .service-image img {
-    height: 300px;
-  }
+    .services-detail-list {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
 
-  .service-content h2 {
-    font-size: 2rem;
-  }
-}
+    .service-block,
+    .service-block:nth-child(even) {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 80px;
+        align-items: flex-start;
+        text-align: left;
+    }
 
-@media (max-width: 900px) {
-  .diensten-row, .diensten-row.reverse {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .diensten-img-container {
-    height: 250px;
-    order: -1;
-  }
-}
+    .service-content {
+        width: 100%;
+        padding: 0 10px;
+        order: 2;
+    }
 
-/* ============ Page: Over Ons ============ */
+    .service-image {
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
 
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px; 
+    .service-image img {
+        height: auto;
+        min-height: 280px;
+        max-height: 400px;
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .service-num {
+        font-size: 3.5rem;
+        margin-bottom: -10px;
+        opacity: 0.2;
+    }
+
+    .service-content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .service-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .service-content li {
+        justify-content: flex-start;
+        font-size: 1.05rem;
+        padding-right: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-        max-width: 300px; 
+    .service-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-image img {
+        min-height: 220px;
     }
 }
 
+@media (max-width: 950px) {
+
+    .service-block,
+    .service-block:nth-child(even) {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 70px;
+        align-items: flex-start;
+    }
+
+    .service-image {
+        width: 100% !important;
+        order: -1 !important;
+        margin-bottom: 15px;
+    }
+
+    .service-image img {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .service-content {
+        width: 100% !important;
+        order: 1 !important;
+        padding: 0;
+    }
+
+    .service-num {
+        font-size: 3rem;
+        margin-bottom: 5px;
+        opacity: 0.2;
+    }
+
+    .service-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .service-content p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+}
+
+/*============= Page: Projecten ===========*/
+
+@media (max-width: 768px) {
+    .projects-hero {
+        padding: 60px 15px;
+    }
+
+    .projects-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .projects-filter {
+        padding: 20px 10px;
+    }
+
+    .filter-buttons {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .projects-grid-container {
+        padding: 0 10px;
+    }
+
+    .project-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ============ Page: Over Ons ============ */
+
 @media (max-width: 900px) {
-  .about-container { grid-template-columns: 1fr; }
-  .about-image { order: -1; } 
-  .about-image img { box-shadow: 10px 10px 0px var(--green); }
+    .about-hero {
+        padding: 60px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+
+        .about-image {
+            order: -1;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .about-image img {
+            box-shadow: 10px 10px 0px var(--green);
+        }
+
+        .image-badge {
+            padding: 10px 20px;
+            font-size: 14px;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .about-stats {
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 kolommen op tablets/grote telefoons */
+            gap: 20px;
+        }
+
+        .about-cta h2 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-cta {
+        padding: 60px 20px;
+    }
+}
+
+/* ============ Page: 404  ============ */
+@media (max-width: 768px) {
+    .error-container h1 {
+        font-size: 5rem;
+    }
+
+    .error-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .error-page {
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-container h1 {
+        font-size: 4rem;
+    }
+
+    .error-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .error-container p {
+        font-size: 0.95rem;
+    }
+
+    .error-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

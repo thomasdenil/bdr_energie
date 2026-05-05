@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - BDR Energie</title>
+    <title>Pagina niet gevonden - BDR Energie</title>
     <link rel="stylesheet" href="./style/main.css" />
-    <link rel="stylesheet" href="./style/animaties.css" />
-    <link rel="stylesheet" href="./style/contact.css" />
     <link rel="stylesheet" href="./style/mobile.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="./style/404.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="menu">
@@ -34,79 +31,19 @@
         <div class="hamburger" onclick="toggleMenu()">☰</div>
       </div>
     </header>
-    <section class="contact-hero">
-      <h1>Neem contact op met <span id="word">BDR Energie</span></h1>
-      <p>
-        Heeft u vragen over zonnepanelen, laadpalen of sanitair? Ons team staat
-        voor u klaar.
-      </p>
-    </section>
 
-    <section class="contact-page">
-      <div class="contact-grid">
-        <div class="contact-details">
-          <h3>Contactgegevens</h3>
-          <div class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <span><a href="tel:+32493299175">+32 50 11 15 87</a></span>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <span
-              ><a href="mailto:info@bdrenergie.be">info@bdrenergie.be</a></span
-            >
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Sijselestraat 42, 8730 Beernem</span>
-          </div>
-
-          <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.7365618413645!2d3.3361843!3d51.1317666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c35061694f6f7d%3A0x7d6c6e76878b4b7c!2sSijselestraat%2042%2C%208730%20Beernem!5e0!3m2!1snl!2sbe!4v1710500000000!5m2!1snl!2sbe"
-              width="100%"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>
-          </div>
-        </div>
-
-        <div class="contact-form-wrapper">
-          <h3>Stuur ons een bericht</h3>
-          <form class="bdr-form">
-            <div class="form-group">
-              <input type="text" placeholder="Volledige Naam" required />
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="E-mailadres" required />
-            </div>
-            <div class="form-group">
-              <select required>
-                <option value="" disabled selected>Onderwerp</option>
-                <option value="zonnepanelen">Zonnepanelen</option>
-                <option value="laadpalen">Laadpalen</option>
-                <option value="thuisbatterij">Thuisbatterijen</option>
-                <option value="sanitair">Sanitair</option>
-                <option value="dakwerken">Dakwerken</option>
-                <option value="anders">Andere vraag</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea
-                placeholder="Uw bericht of vraag..."
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Verzenden</button>
-          </form>
-        </div>
+    <main class="error-page">
+      <div class="error-container">
+        <div class="bolt-icon"><i class="fas fa-bolt"></i></div>
+        <h1>404</h1>
+        <h2>Pagina niet gevonden.</h2>
+        <p>
+          De pagina die u zoekt bestaat niet of is verplaatst. Geen zorgen, we
+          helpen u graag terug op het juiste spoor.
+        </p>
+        <a href="./index.html" class="error-btn">Terug naar Home</a>
       </div>
-    </section>
-
+    </main>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col brand">
@@ -186,11 +123,10 @@
         <p>© 2026 BDR Energie — Alle rechten voorbehouden</p>
       </div>
     </footer>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="./logic/main.js"></script>
   </body>
-  <script src="./logic/main.js"></script>
 </html>

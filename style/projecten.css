@@ -43,7 +43,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -61,7 +61,7 @@
 
 .project-img {
   position: relative;
-  height: 250px;
+  aspect-ratio: 16/9;
 }
 
 .project-img img {
@@ -118,4 +118,17 @@
 .project-location i {
   color: var(--green);
   margin-right: 5px;
+}
+
+#loadMoreBtn {
+  position: center;
+  overflow: hidden;
+  margin-right: 25px;
+
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }

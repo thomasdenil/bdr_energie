@@ -1,0 +1,49 @@
+  .error-page {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .error-container h1 {
+      font-size: 8rem;
+      color: var(--green);
+      margin: 0;
+      line-height: 1;
+  }
+
+  .error-container h2 {
+      font-size: 2rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+  }
+
+  .error-container p {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      color: #666;
+  }
+
+  .error-btn {
+      background-color: var(--black);
+      color: var(--white);
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+  }
+
+  .error-btn:hover {
+      background-color: var(--green);
+      transform: translateY(-3px);
+  }
+
+  .bolt-icon {
+      font-size: 3rem;
+      color: var(--green);
+      margin-bottom: 20px;
+  }

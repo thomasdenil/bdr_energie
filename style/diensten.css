@@ -110,3 +110,12 @@
   padding-right: 10px;
 }
 
+/* Fix voor scheve blokken op desktop */
+.service-block {
+    align-items: center; /* Dit houdt de korte tekst netjes gecentreerd naast de grote foto */
+}
+
+.service-content, .service-image {
+    flex: 1;
+    min-width: 0; /* Voorkomt dat flex-items uit hun container breken */
+}
