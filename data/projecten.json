@@ -226,7 +226,7 @@
   {
     "title": "Infrarood Verwarming Koksijde",
     "category": "sanitary",
-    "description": "Installatie van energie-efficiënte infraroodpanelen in een woning te Koksijde voor een aangename, directe stralingswarmte en een lager verbruik.",
+    "description": "Installatie van energie-efficiënte infraroodpaneel in een woning te Koksijde voor een aangename, directe stralingswarmte en een lager verbruik.",
     "location": "Koksijde",
     "image": "./assets/projecten/Particulier_Infrarood_Koksijde.jpg",
     "tag": "Verwarming"
@@ -243,7 +243,7 @@
     "title": "LG Warmtepompboiler",
     "category": "sanitary",
     "description": "Installatie van een LG warmtepompboiler voor de duurzame productie van warm tapwater, waarbij tot 75% minder energie wordt verbruikt vergeleken met een traditionele boiler.",
-    "location": "Locatie invullen",
+    "location": "Lier",
     "image": "./assets/projecten/Particulier_Warmtepompboiler_LG.jpg",
     "tag": "Warmtepomp"
   },
@@ -278,5 +278,37 @@
     "location": "Moorsele",
     "image": "./assets/projecten/Particulier_Solax_Batterij.jpg",
     "tag": "Thuisbatterij"
+  },
+  {
+  "title": "Dakrenovatie & Isolatie Beernem",
+  "category": "roof",
+  "description": "Complete vernieuwing van een residentieel dak in Beernem, inclusief verbeterde isolatiewaarden en hoogwaardige afwerking. Een structurele upgrade die de woning energiezuinig en stormbestendig maakt.",
+  "location": "Beernem",
+  "image": "./assets/projecten/Particulier_Dakrenovatie_Beernem.jpg",
+  "tag": ["Dakrenovatie"]
+  },
+  {
+    "title": "Geoptimaliseerde Energieopslag",
+    "category": "battery",
+    "description": "Installatie van een intelligent batterijsysteem in Oostende, naadloos ingewerkt in de technische ruimte voor een compacte opstelling en maximale efficiëntie van de zonne-energie.",
+    "location": "Oostende",
+    "image": "./assets/projecten/Particulier_Thuisbaterij_Oostende.jpg",
+    "tag": ["Thuisbatterij"]
+  },
+  {
+  "title": "Klimaatbeheersing op Maat",
+  "category": "sanitary",
+  "description": "Plaatsing van een energiezuinig aircosysteem in een particuliere woning te Kwatrecht. De installatie biedt zowel koeling in de zomer als efficiënte bijverwarming in de winter voor een optimaal comfort.",
+  "location": "Kwatrecht",
+  "image": "./assets/projecten/Particulier_Airco_Kwatrecht.jpg",
+  "tag": ["Airco"]
+  },
+  {
+    "title": "Installatie Aircosysteem ",
+    "category": "sanitary",
+    "description": "Plaatsing van een discreet aircosysteem in Oostkamp. De installatie is ontworpen voor een efficiënte regeling van het binnenklimaat, met aandacht voor zowel koeling als bijverwarming.",
+    "location": "Oostkamp",
+    "image": "./assets/projecten/Particulier_Airco_Oostkamp.jpg",
+    "tag": ["Airco"]
   }
 ]
