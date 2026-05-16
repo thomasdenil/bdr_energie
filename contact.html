@@ -76,32 +76,72 @@
 
         <div class="contact-form-wrapper">
           <h3>Stuur ons een bericht</h3>
-          <form class="bdr-form">
+          <form
+            action="https://formsubmit.co/contact@bdrenergie.be"
+            method="POST"
+            class="bdr-form"
+          >
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://www.bdrenergie.be/form-completed.html"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="We hebben uw vraag goed ontvangen!"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="We contacteren u zo spoedig met een antwoord op uw vraag."
+            />
             <div class="form-group">
-              <input type="text" placeholder="Volledige Naam" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Volledige Naam"
+                required
+              />
             </div>
             <div class="form-group">
-              <input type="email" placeholder="E-mailadres" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mailadres"
+                required
+              />
             </div>
             <div class="form-group">
-              <select required>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Telefoon"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <select name="subject" required>
                 <option value="" disabled selected>Onderwerp</option>
-                <option value="zonnepanelen">Zonnepanelen</option>
-                <option value="laadpalen">Laadpalen</option>
-                <option value="thuisbatterij">Thuisbatterijen</option>
-                <option value="sanitair">Sanitair</option>
-                <option value="dakwerken">Dakwerken</option>
-                <option value="anders">Andere vraag</option>
+                <option>Algemene elektriciteitswerken</option>
+                <option>Zonnepanelen</option>
+                <option>Thuisbatterijen</option>
+                <option>Omvormers</option>
+                <option>Warmtepompen</option>
+                <option>Laadpalen</option>
+                <option>Airconditioning</option>
               </select>
             </div>
             <div class="form-group">
               <textarea
+                name="question"
                 placeholder="Uw bericht of vraag..."
                 rows="5"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="submit-btn">Verzenden</button>
+            <button type="submit" class="submit-btn">Verstuur uw bericht</button>
           </form>
         </div>
       </div>
