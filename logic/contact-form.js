@@ -1,27 +1,7 @@
 (function () {
-  const FORM_ENDPOINT = "https://api.web3forms.com/submit";
-  const CHECK_TIMEOUT_MS = 8000;
+  const SUBMIT_TIMEOUT_MS = 15000;
   const UNAVAILABLE_MESSAGE =
     "Het formulier is momenteel niet beschikbaar, gelieve telefonisch contact op te nemen.";
-
-  async function isFormServiceAvailable() {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), CHECK_TIMEOUT_MS);
-
-    try {
-      const response = await fetch(FORM_ENDPOINT, {
-        method: "GET",
-        mode: "cors",
-        cache: "no-store",
-        signal: controller.signal,
-      });
-      return response.status > 0 && response.status < 500;
-    } catch {
-      return false;
-    } finally {
-      clearTimeout(timeoutId);
-    }
-  }
 
   function showError(errorEl) {
     errorEl.textContent = UNAVAILABLE_MESSAGE;
@@ -34,6 +14,16 @@
     errorEl.hidden = true;
   }
 
+  function getRedirectUrl(form, formData) {
+    const redirect = formData.get("redirect");
+    if (!redirect) return "./form-completed.html";
+    try {
+      return new URL(redirect, window.location.href).href;
+    } catch {
+      return "./form-completed.html";
+    }
+  }
+
   function initWeb3Form(form) {
     const errorId = form.getAttribute("data-error-id");
     const errorEl = errorId ? document.getElementById(errorId) : null;
@@ -41,32 +31,47 @@
 
     const submitBtn = form.querySelector(".submit-btn");
     const defaultBtnHtml = submitBtn ? submitBtn.innerHTML : "";
-    let allowNativeSubmit = false;
 
     form.addEventListener("submit", async function (event) {
-      if (allowNativeSubmit) return;
-
       event.preventDefault();
       hideError(errorEl);
 
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = "Bezig met controleren...";
+        submitBtn.innerHTML = "Bezig met verzenden...";
       }
 
-      const available = await isFormServiceAvailable();
+      let succeeded = false;
 
-      if (!available) {
+      try {
+        const formData = new FormData(form);
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
+
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
+
+        const data = await response.json();
+        if (data.success) {
+          succeeded = true;
+          window.location.href = getRedirectUrl(form, formData);
+          return;
+        }
+
         showError(errorEl);
-        if (submitBtn) {
+      } catch {
+        showError(errorEl);
+      } finally {
+        if (!succeeded && submitBtn) {
           submitBtn.disabled = false;
           submitBtn.innerHTML = defaultBtnHtml;
         }
-        return;
       }
-
-      allowNativeSubmit = true;
-      form.submit();
     });
   }
 
