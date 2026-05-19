@@ -121,3 +121,22 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(72, 183, 71, 0.3);
 }
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-service-error,
+.contact-form-error {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #e8b4b4;
+  background: #fff5f5;
+  color: #8b2e2e;
+  font-size: 15px;
+  line-height: 1.5;
+}

@@ -356,14 +356,45 @@
         </div>
 
         <div class="offerte-card">
-          <form class="bdr-offerte-form">
+          <form
+            id="offerte-form"
+            data-web3forms
+            data-error-id="offerte-form-error"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="bdr-offerte-form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="96e84c2c-43a9-48c8-ae56-392d821a6ced"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="./form-completed.html"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Nieuwe offerte of vraag via website - BDR Energie"
+            />
             <div class="form-row">
-              <input type="text" placeholder="Naam" />
-              <input type="email" placeholder="E-mailadres" required />
+              <input type="text" name="name" placeholder="Naam" />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mailadres"
+                required
+              />
             </div>
 
             <div class="form-group">
-              <select id="aanvraag-type" onchange="toggleFormFields()">
+              <select
+                id="aanvraag-type"
+                name="aanvraag_type"
+                onchange="toggleFormFields()"
+              >
                 <option value="offerte" selected>
                   Ik wil een gratis offerte aanvragen
                 </option>
@@ -375,29 +406,42 @@
               <div class="form-group">
                 <input
                   type="text"
+                  name="adres"
                   placeholder="Adres + Huisnummer (voor dakanalyse)"
                 />
               </div>
               <div class="form-row">
-                <select>
+                <select name="type_installatie">
                   <option value="" disabled selected>Type installatie</option>
                   <option value="zonnepanelen">Zonnepanelen</option>
                   <option value="batterij">Thuisbatterij</option>
                   <option value="laadpaal">Laadpaal</option>
-                  <option value="totaal">Airco's</option>
-                  <option value="totaal">Sanitair</option>
+                  <option value="airco">Airco's</option>
+                  <option value="sanitair">Sanitair</option>
                   <option value="totaal">Totaalpakket</option>
                 </select>
-                <input type="number" placeholder="Jaarverbruik (kWh)" />
+                <input
+                  type="number"
+                  name="jaarverbruik"
+                  placeholder="Jaarverbruik (kWh)"
+                />
               </div>
             </div>
 
             <div class="form-group">
               <textarea
+                name="bericht"
                 placeholder="Uw bericht of extra info..."
                 rows="4"
               ></textarea>
             </div>
+
+            <p
+              id="offerte-form-error"
+              class="form-service-error"
+              role="alert"
+              hidden
+            ></p>
 
             <button type="submit" class="submit-btn">
               Verzenden <i class="fas fa-paper-plane"></i>
@@ -494,4 +538,5 @@
   </body>
   <script src="./logic/main.js"></script>
   <script src="./logic/recensies.js"></script>
+  <script src="./logic/contact-form.js"></script>
 </html>
